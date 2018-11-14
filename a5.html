@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document curso aprenderaprogramar.com</title>
+<style>
+    img {
+        height: 180px;
+        width: 180px;
+    }    
+</style>
+<script>
+window.onload = function(){
+    var imagen = document.getElementById("imagen_web");
+    imagen.addEventListener('mouseover',cambiarImagen);
+    imagen.addEventListener('mouseout',imagenIniciar);
+    
+    function cambiarImagen(){
+        this.setAttribute('src','logo.jpg');    
+    }
+    
+    function imagenIniciar(){
+        this.setAttribute('src',"logo_2.jpg");
+    }
+    
+    
+}    
+    
+</script>
+</head>
+<body>
+    <h1>La web para aprender programacion</h1>
+        <p>La programación Web, parte de las siglas WWW, que significan World Wide Web o telaraña mundial.</p>
+        <p>En la programación Web, el HTML es el lenguaje que permite codificar o preparar documentos de hipertexto, que viene a ser el lenguaje comun para la construccion de una pagina Web.</p>
+        <img id="imagen_web" src="logo.jpg" />
+</body>
+</html>
